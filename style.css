@@ -65,6 +65,30 @@ body {
 
             & > :last-child {
                 justify-self: end;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                color: var(--dark-grayish-blue);
+                font-weight: var(--font-weight-bold);
+
+                & > #toggle {
+                    width: 50px;
+                    height: 25px;
+                    border-radius: 20px;
+                    background-color: var(--toggle);
+                    position: relative;
+                    transition: all 0.5s ease-in-out;
+
+                    & > div {
+                        margin: 3px;
+                        height: calc(100% - 6px);
+                        width: 19px;
+                        border-radius: 50%;
+                        background-color: var(--white);
+                        cursor: pointer;
+                        position: absolute;
+                    }
+                }
             }
         }
 
